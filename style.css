@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loading {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon_dumble {
+    color: white;
+}
+
+.main {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav_continer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+}
+
+.nav_continer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.9vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.nav_content {
+    overflow: hidden;
+}
+
+
+.nav_hover {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    left: -100%;
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.nav_content:hover {
+    .nav_hover {
+        left: 0;
+    }
+}
+
+nav p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: white;
+}
+
+nav i {
+    color: white;
+}
+
+.lan_main_text {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.home_video_cie {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.15;
+}
+
+.lan_main_text .lan_text_main {
+    position: absolute;
+    color: white;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.lan_main_text .lan_text_main p:nth-child(1) {
+    font-size: 7vw;
+    white-space: nowrap;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.lan_main_text .lan_text_main p:nth-child(2) {
+    font-size: 0.9vw;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.lan_main_text .button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.start_txt {
+    transition: 0.5s;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+}
+
+.btn_hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button:hover {
+    .btn_hover {
+        top: 0;
+    }
+
+    .start_txt {
+        color: black;
+        z-index: 1;
+    }
+}
+
+
+
+/* ..........ABOUT US PAGE SECTION..........  */
+
+
+.partner_main {
+    width: 100%;
+    min-height: 120vh;
+    background-color: #333;
+    position: relative;
+}
+
+.partners_first {
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    height: 150px;
+}
+
+.partners_first .span_11 {
+    display: inline-block;
+    font-size: 8vw;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    margin-inline: 7px;
+}
+
+.partners_first .span_22 {
+    display: inline-block;
+    font-size: 8vw;
+    color: #333;
+    font-family: 'Anton', sans-serif;
+    margin-inline: 7px;
+    -webkit-text-stroke: 1px white;
+}
+
+.partners_second {
+    height: calc(120vh - 150px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.com_box {
+    width: 250px;
+    height: 400px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+}
+
+.com_box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.partner_achiv {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.partner_text {
+    margin-top: 30px;
+    font-size: 1.5vw;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+}
+
+
+/* ..........MEMBERSHIP PLAN PAGE CSS..........  */
+
+
+
+.membership_main {
+    height: 110vh;
+    width: 100%;
+    background-color: #222;
+    position: relative;
+    padding: 4.5vh 4.2vw;
+}
+
+.membership_main h1 {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.6vmax;
+    margin-top: 1vmax;
+    margin-bottom: 3.5vmax;
+}
+
+.membership_main h1 span {
+    color: #F6BA53;
+}
+
+.member_plan {
+    position: relative;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.member_plan a {
+    position: relative;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    border-top: 2px solid white;
+    padding: 0 3px;
+}
+
+.member_plan a h4 {
+    width: 30%;
+    font-size: 1.5vmax;
+    position: relative;
+    z-index: 99;
+    transition: 0.8s;
+}
+
+.member_plan a h5 {
+    width: 30%;
+    font-size: 1.6vmax;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    transition: 0.8s;
+}
+
+.member_plan a h6 {
+    width: 30%;
+    font-size: 1.5vmax;
+    text-align: right;
+    position: relative;
+    z-index: 99;
+    transition: 0.8s;
+}
+
+.member_plan a .white_space {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    transition: width cubic-bezier(0.19, 1, 0.22, 1) 1.3s;
+}
+
+.member_plan a:hover .white_space {
+    width: 100%;
+
+}
+
+.member_plan a:hover {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+/*..........ABOUT US PAGE CSS..........*/
+
+.about_us {
+    width: 100%;
+    height: 100vh;
+}
+
+.about_us_first {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.about_us_bottom {
+    width: 50px;
+    height: 1px;
+    align-self: baseline center;
+    background-color: black;
+    z-index: 9;
+}
+
+.about_us_first p {
+    height: auto;
+    overflow-y: hidden;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.about_us_second {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.about_us_logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about_logo_continer {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_us_logo img {
+    width: 300px;
+}
+
+.about_us_text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.about_us_text p {
+    font-size: 15px;
+    color: black;
+    max-width: 80%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+/* ..........FOOTER SECTION CSS.......... */
+
+footer{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
